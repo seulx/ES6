@@ -1,0 +1,60 @@
+# ES6
+learning
+
+ Caracteristica #1
+ Podemos re-declarar variables con var pero esto puede causar problemas en donde re-declaremos sin darnos cuenta 
+  
+  -EJEMPLO- VAR
+ var nombre = 'Endry Mena Peguero';
+ var nombre = 'Alexander';
+
+  -EJEMPLO- LET
+ let pais = 'mexico';
+ let pais = 'spain';
+
+ console.log('Hola ' + pais);
+ 
+  Caracteristica #2
+ let y const tambien tienen un scope en el que no podemos acceder a las variables creadas dentro de una funcion.
+
+ function saludo(){
+     let nombre = 'endry';
+     return 'Hola ' + nombre;
+ }
+
+ console.log(saludo());
+ console.log(nombre);
+ 
+  Caracteristica #3
+ let y const tienen un scope de tipo bloque
+
+ let edad = 18;
+
+ if(edad >= 18){
+    let esAdulto = true;
+ }
+
+ console.log(esAdulto);
+ 
+  Caracteristica #4
+ const se utiliza cuando se quiere que el valor de una variable nunca cambie
+ const nombre = 'carlos';
+ nombre = 'arturo'; DA ERROR
+
+ const colores = ['Rojo', 'Verde'];
+ colores.push('Azul');
+ pero de esta forma se pueden agregar mas cosas al arreglo sin cambiar su valor 
+
+ console.log(colores);
+
+ var - ya no se usa 
+
+let - se usa si pretendes cambiar su valor mas adelante
+
+const - se usa mayormente por los programadores
+ 
+ 
+ 
+ 
+ 
+ 
